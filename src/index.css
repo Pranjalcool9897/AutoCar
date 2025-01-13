@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+/* Swiper custom styles */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #EE3131 !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: #EE3131 !important;
+}
+
+/* Responsive padding adjustments */
+@media (max-width: 640px) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+/* Additional responsive utilities */
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
